@@ -1,15 +1,15 @@
 {
-  "name": "markdown-fenced-codeblock-example-injection",
-  "displayName": "Markdown fenced code block example injection",
+  "name": "regex-markdown-syntax-highlighting",
+  "displayName": "Regex Markdown Syntax Highlighting",
   "description": "",
   "version": "0.0.1",
-  "publisher": "bierner",
+  "publisher": "pit00",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example.git"
+    "url": "https://github.com/pit00/vscode-markdown-regex-syntax"
   },
   "bugs": {
-    "url": "https://github.com/mjbvz/vscode-fenced-code-block-grammar-injection-example/issues"
+    "url": "https://github.com/pit00/vscode-markdown-regex-syntax/issues"
   },
   "engines": {
     "vscode": "^1.8.0"
@@ -20,19 +20,19 @@
   "contributes": {
     "languages": [
       {
-        "id": "superjs-injection"
+        "id": "regex-injection"
       }
     ],
     "grammars": [
       {
-        "language": "superjs-injection",
-        "scopeName": "markdown.superjs.codeblock",
+        "language": "regex-injection",
+        "scopeName": "markdown.regex.codeblock",
         "path": "./syntaxes/codeblock.json",
         "injectTo": [
           "text.html.markdown"
         ],
         "embeddedLanguages": {
-          "meta.embedded.block.superjs": "javascript"
+          "meta.embedded.block.regex": "javascript"
         }
       }
     ]
